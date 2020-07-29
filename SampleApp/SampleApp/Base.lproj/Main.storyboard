@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMA SDK Sample App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qan-n4-9BS">
+                                <rect key="frame" x="124.5" y="84" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Rq4-MM-7pX">
+                                <rect key="frame" x="10" y="145" width="394" height="221.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ev-sI-xM6">
+                                        <rect key="frame" x="166.5" y="60" width="61" height="102"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                        <state key="normal" title="▶">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFA-iC-l96"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7ev-sI-xM6" firstAttribute="centerX" secondItem="Rq4-MM-7pX" secondAttribute="centerX" id="7K5-Ko-wLl"/>
+                                    <constraint firstAttribute="width" secondItem="Rq4-MM-7pX" secondAttribute="height" multiplier="16:9" id="8CJ-B4-yiE"/>
+                                    <constraint firstItem="7ev-sI-xM6" firstAttribute="centerY" secondItem="Rq4-MM-7pX" secondAttribute="centerY" id="nI6-uJ-zKR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rq4-MM-7pX" firstAttribute="top" secondItem="qan-n4-9BS" secondAttribute="bottom" constant="40" id="7z7-e6-H47"/>
+                            <constraint firstItem="qan-n4-9BS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hZ-Dm-9pJ"/>
+                            <constraint firstItem="qan-n4-9BS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="B7E-mD-K0f"/>
+                            <constraint firstItem="Rq4-MM-7pX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="FiG-jv-9Hi"/>
+                            <constraint firstAttribute="trailing" secondItem="Rq4-MM-7pX" secondAttribute="trailing" constant="10" id="KRw-CB-N6e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="7ev-sI-xM6" id="2Lk-rF-8yb"/>
+                        <outlet property="videoView" destination="Rq4-MM-7pX" id="rMC-MO-eer"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="113"/>
+        </scene>
+    </scenes>
+</document>

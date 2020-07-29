@@ -7,7 +7,7 @@ This is a reference application showing you how you can enable OpenWrap header b
 | Environment | Version |
 | ------- | ------ |
 | Xcode | 10.x or greater |
-| iOS | 9 or greater |
+| iOS | 10 or greater |
 | [IMA SDK](https://developers.google.com/interactive-media-ads/docs/sdks/ios/client-side/) | 3.11.4 |
 
 

@@ -1,5 +1,5 @@
 # Introduction
-This is a reference application that shows you how to enable OpenWrap header bidding for an in-stream video ad in an Android app. An Android app makes the initial ad request to the OpenWrap server, which runs a cloud-side auction with bids received from Prebid S2S bidders. The client receives the winning bid from the OpenWrap server and then passes the winning bid price to GAM (Google Ad Manager). If GAM finds a campaign with a higher price, GAM returns and renders the video ad. Otherwise, OpenWrap's winning bid will be sent back to the client and rendered using an IMA video player.
+This is a reference application that shows you how to enable OpenWrap header bidding for an in-stream video ad in an iOS app. An iOS app makes the initial ad request to the OpenWrap server, which runs a cloud-side auction with bids received from Prebid S2S bidders. The client receives the winning bid from the OpenWrap server and then passes the winning bid price to GAM (Google Ad Manager). If GAM finds a campaign with a higher price, GAM returns and renders the video ad. Otherwise, OpenWrap's winning bid will be sent back to the client and rendered using an IMA video player.
 
 
 ## Required dependencies to run this App
